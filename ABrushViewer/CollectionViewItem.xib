@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="21507" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="21507"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="CollectionViewItem" customModule="ABrushViewer" customModuleProvider="target"/>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <collectionViewItem id="BFq-qL-agD" customClass="CollectionViewItem" customModule="ABrushViewer" customModuleProvider="target">
+            <connections>
+                <outlet property="imageView" destination="iFj-3Z-NoA" id="64s-hf-37b"/>
+                <outlet property="textField" destination="Xou-Lk-VKa" id="VT5-KU-5as"/>
+                <outlet property="view" destination="UPm-2A-2yL" id="2Nm-GW-m1j"/>
+            </connections>
+        </collectionViewItem>
+        <customView id="UPm-2A-2yL">
+            <rect key="frame" x="0.0" y="0.0" width="163" height="76"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="iFj-3Z-NoA">
+                    <rect key="frame" x="0.0" y="0.0" width="163" height="76"/>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" id="Y1k-pK-hJy"/>
+                </imageView>
+                <textField horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="Xou-Lk-VKa">
+                    <rect key="frame" x="-2" y="0.0" width="167" height="76"/>
+                    <textFieldCell key="cell" selectable="YES" id="iGV-5J-7qJ">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+            </subviews>
+            <constraints>
+                <constraint firstItem="iFj-3Z-NoA" firstAttribute="leading" secondItem="UPm-2A-2yL" secondAttribute="leading" id="LeU-2e-dMp"/>
+                <constraint firstItem="Xou-Lk-VKa" firstAttribute="leading" secondItem="UPm-2A-2yL" secondAttribute="leading" id="SFX-S2-a7S"/>
+                <constraint firstAttribute="trailing" secondItem="Xou-Lk-VKa" secondAttribute="trailing" id="Ybc-Df-aOT"/>
+                <constraint firstItem="Xou-Lk-VKa" firstAttribute="top" secondItem="UPm-2A-2yL" secondAttribute="top" id="a4J-Eu-7Za"/>
+                <constraint firstItem="iFj-3Z-NoA" firstAttribute="top" secondItem="UPm-2A-2yL" secondAttribute="top" id="dvr-mo-ROy"/>
+                <constraint firstAttribute="bottom" secondItem="Xou-Lk-VKa" secondAttribute="bottom" id="nRp-dJ-u6g"/>
+                <constraint firstAttribute="trailing" secondItem="iFj-3Z-NoA" secondAttribute="trailing" id="nip-4m-eT9"/>
+                <constraint firstAttribute="bottom" secondItem="iFj-3Z-NoA" secondAttribute="bottom" id="vzb-hf-gcx"/>
+            </constraints>
+            <point key="canvasLocation" x="71.5" y="40"/>
+        </customView>
+    </objects>
+</document>

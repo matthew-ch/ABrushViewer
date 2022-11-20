@@ -1,0 +1,3 @@
+test_files/
+**/xcuserdata/
+.DS_Store
