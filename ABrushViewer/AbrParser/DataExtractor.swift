@@ -37,7 +37,7 @@ class DataExtractor {
         defer {
             offset += count
         }
-        return data[offset..<offset + count]
+        return Data(data[offset..<offset + count])
     }
 
     func read<T>(type: T.Type) throws -> T {
